@@ -1,14 +1,170 @@
-console.log('hello');
+// console.log('hello');
 
 // alert("this is Sergey");
 
 // Variables
-var b = "smoothie";
-console.log(b);
+// var b = "smoothie";
+// console.log(b);
 
-var someNumber = 45;
-console.log(someNumber);
+// var someNumber = 45;
+// console.log(someNumber);
 
-var age = prompt("what is your age?");
+// var age = prompt("what is your age?");
 
-document.getElementById('someText').innerHTML = age;
+// document.getElementById('someText').innerHTML = age;
+
+// Numbers in Java
+// var num1 = 11;
+
+// Increment
+// num1++;
+// console.log(num1);
+
+// Decrement
+// num1--;
+// console.log(num1);
+
+// Divide, multiply *, reminder %
+// console.log(num1 % 5);
+
+// Increment/decriment by any number (by 10)
+// num1 += 10;
+// console.log(num1);
+
+/* Funstions
+1. Create a function
+2. Call the function
+*/
+
+// Create
+function fun() {
+    console.log("this is a function");
+}
+
+// Call
+fun();
+
+/* Let's create a function that take in a name
+and says Hello followed by your name
+
+Fo example
+
+Name: Sergey
+Return: Hello Sergey
+*/
+
+
+
+function greeting(yourName) {
+    
+    var result = "Hello " + yourName; // String Concatenation
+    console.log(result);
+}
+
+// var name = prompt("What is your name?")
+// greeting(name);
+
+// How do arguments work in functions?
+// How do we add 2 numbers togather in a function?
+
+function sumNumbers(num1, num2){
+    var result = num1 + num2;
+    console.log(result);
+}
+
+sumNumbers(12, 10);
+sumNumbers("Privet ", "Santa");
+
+/* while loops
+var num = 0;
+
+while (num < 100) {
+    num +=1;
+    console.log(num);
+}
+*/
+
+// For loop
+for (let num = 0; num < 4; num ++) {
+    console.log(num);
+}
+
+// Data types
+let yourAge = 18; //number
+let yourName = "Bob"; //string
+let name = {first: "Jane", last: "Doe"}; //Odject
+let truth = false; //boolean
+let groceries = ["apple", "banana", 'orange']; //array
+let random; //undefined
+let nothing = null; // value null
+
+
+// Strings in Javascript (common methods)
+let fruit = 'Banana, apple, balckberry';
+let moreFruits = 'banana\napple'; // \n-new line
+console.log(moreFruits);
+
+console.log(fruit.length);
+
+console.log(fruit.indexOf('nan'))
+
+console.log(fruit.slice(2,6));
+
+console.log(fruit.replace("ban", "123"));
+
+console.log(fruit.toUpperCase(fruit));
+
+console.log(fruit.toLowerCase(fruit));
+
+console.log(fruit.charAt(2));
+console.log(fruit[2]);
+
+console.log(fruit.split('')); // split by characters
+console.log(fruit.split(',')); // split by a comma
+
+// Array
+let fruits = ['banana', 'apple', 'orange', 'pineapples'];
+fruits = new Array('banana', 'apple', 'orange', 'pineapples');
+
+console.log(fruits[2]); // access value at index 2nd (third word)
+
+fruits[0] = 'pear';
+console.log(fruits);
+
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
+
+// array common methods
+console.log('toString', fruits. toString());
+console.log(fruits.join(' - '));
+console.log(fruits.join(' * '));
+// console.log(fruits, fruits.pop(), fruits); // pop pineapples
+console.log(fruits.pop(), fruits);
+console.log(fruits.push('blackberries'), fruits); // add to the end
+console.log(fruits[3]);
+fruits[fruits.length] = 'new fruit'; // same as push, fruits[4] = 'new fruit';
+console.log(fruits);
+fruits.shift(0); // remove first element from a list. Try to avoid
+console.log(fruits);
+fruits.unshift('kiwi'); // add first element to an array
+console.log(fruits);
+
+let vegetables = ['asparagus', 'tomato', 'brocoli'];
+
+let allGroceries = fruits.concat(vegetables);
+console.log(allGroceries);
+console.log(allGroceries.slice(1, 4));
+console.log(allGroceries.reverse());
+console.log(allGroceries.sort());
+
+let someNumbers = [5, 10, 2, 25, 3, 255, 1, 2, 5, 334, 321, 2];
+console.log(someNumbers.sort());
+console.log(someNumbers.sort(function(a, b) {return a-b})); // sorted in ascending order
+console.log(someNumbers.sort(function(a, b) {return b-a})); // sorted in discending order
+
+let emptyArray = new Array();
+for (let num = 0; num <= 10; num++) {
+    emptyArray.push(num);
+}
+console.log(emptyArray);
