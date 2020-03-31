@@ -168,3 +168,65 @@ for (let num = 0; num <= 10; num++) {
     emptyArray.push(num);
 }
 console.log(emptyArray);
+
+// Objects in Jabascript
+// dictionaries in Python
+let student = {
+    first: 'Sergey', 
+    last: "Skumatov", 
+    age:41, 
+    height:170,
+    studentInfo: function(){
+        return this.first + '\n' + this.last + '\n' + this.age;
+    }
+};
+// console.log(student.first);
+// console.log(student.last);
+// student.first = "Serega";
+// console.log(student.first);
+
+student.age++;
+console.log(student.age);
+console.log(student.studentInfo());
+
+// Conditionals, Control flows (if else)
+// 18-35 is my target demographic
+// && and
+// || or
+// let age = prompt("what is your age?");
+let age = 40;
+
+if ((age >= 18) && (age <= 35)) {
+    status = 'target demo';
+    console.log(status);
+} else {
+    status = 'not my audience';
+    console.log(status);
+}
+
+// Switch statements
+// differentiate between weekday vs. weekend
+// day 0 --> Sunday
+// day 6 --> Saturday
+// day 4 --> Thursday --> weekday
+switch (2) {
+    case 0:
+        text = "weekend";
+        break;
+    case 5:
+        text = 'weekend';
+        break;
+    case 6:
+        text = 'weekend';
+        break;
+    default:
+        text = 'weekday';
+}
+
+console.log(text);
+
+var one = 1;
+for(var i=0; i<3; i++) {
+    one +=5 * i;
+}
+console.log(one);

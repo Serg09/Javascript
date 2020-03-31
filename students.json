@@ -1,0 +1,15 @@
+// in JSON called an Array with objects inside of it
+// in Phyton List with objects inside of it
+
+[
+	{
+		"name": "Sergey",
+		"age": 41,
+		"height": 170,
+	},
+	{
+		"name": "Diana",
+		"age": 8,
+		"heights": 110
+	}
+]

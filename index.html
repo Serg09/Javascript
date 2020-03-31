@@ -7,5 +7,27 @@
 <body>
     <h1 id="someText"></h1>
     <script src="home.js"></script>
+
+    <script>
+    	let students = `[
+			{
+				"name": "Sergey",
+				"age": 41,
+				"height": 170
+			},
+			{
+				"name": "Diana",
+				"age": 8,
+				"heights": 110
+			}
+		]`
+// to represent it as JSON object we turn it to a String (add ` `)
+			console.log(JSON.parse(students)); // all students
+			console.log(JSON.parse(students)[1]); // second student
+			console.log(JSON.parse(students)[1].age); 
+			// JSON.parse command that have to use 
+    </script>
+
+
 </body>
 </html>
